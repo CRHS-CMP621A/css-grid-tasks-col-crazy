@@ -36,21 +36,31 @@
       }
       .el--1 {
         background-color: blueviolet;
+        grid-column: 1 / 3;
       }
       .el--2 {
         background-color: orangered;
+        align-self: start;
+        justify-self: right;
       }
       .el--3 {
         background-color: green;
+        
       }
       .el--4 {
         background-color: goldenrod;
+        justify-self: center;
+        align-self: center;
       }
       .el--5 {
         background-color: palevioletred;
+        grid-column: 3 / 3;
+        grid-row: 2 / 4;
       }
       .el--6 {
         background-color: steelblue;
+        align-self: end;
+        justify-self: left;
       }
       .el--7 {
         background-color: yellow;
@@ -58,7 +68,9 @@
 
       /*You will need to style the GRID and some specific GRID ITEMs*/
       .grid {
-        /* CSS GRID */
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr;
       }
       /*Grid Items ... */
     </style>
